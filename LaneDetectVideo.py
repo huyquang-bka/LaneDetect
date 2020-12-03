@@ -9,7 +9,7 @@ cap = cv2.VideoCapture(path_video)
 def Canny(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(img, (5, 5), 0)
-    canny = cv2.Canny(blur, 50, 150)
+    canny = cv2.Canny(blur, 50, 100)
     return canny
 
 
